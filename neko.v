@@ -14,8 +14,7 @@ fn main() {
 		} else {
 			content = os.read_file(filename) or { panic('No Such File; $filename') }
 		}
-		uwued := uwu(content)
-		formated := format(uwued, settings)
+		formated := format(content, settings)
 
 		println('$formated')
 	}
